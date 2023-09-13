@@ -102,6 +102,9 @@ const executeCount = ref(0)
 const offsetMap = [1, 5, -6, 8, -4]
 
 const rotation = () => {
+  if (isActive.value) {
+    return
+  }
   isActive.value = true
   targetAngle.value = 360 * r(5, 10) + 360 + offsetMap[executeCount.value % 5]//r(0, 360);
 
