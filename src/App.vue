@@ -99,7 +99,7 @@ const targetAngleStr = computed(() => `${targetAngle.value}deg`)
 const isActive = ref(false)
 const executeCount = ref(0)
 
-const offsetMap = [1, 5, -6, 8, -4]
+const offsetMap = [130, 374, 5, -6, 8, -4]
 
 const rotation = () => {
   if (isActive.value) {
